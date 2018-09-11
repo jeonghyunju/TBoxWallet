@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WalletMain"
+    android:background="@color/walletSecondColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/TitleLinear"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:gravity="center_vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/ic_wallet_fore"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/WalletTitle"
+            android:textColor="@color/walletFirstColor"
+            android:textSize="19sp"
+            android:padding="5sp"
+            android:layout_marginStart="2dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_settings_black_24dp"
+            android:background="@null"
+            android:padding="5sp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/wallet_account_info_circle">
+
+        <TextView
+            android:id="@+id/WalletAccountTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/WalletAccountTitle"
+            android:textColor="@color/walletFifthColor"
+            android:textSize="12sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="3sp"/>
+
+        <TextView
+            android:id="@+id/WalletAccountTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tbox Account"
+            android:textSize="19sp"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="20sp"
+            android:layout_below="@id/WalletAccountTitleTv"/>
+
+        <TextView
+            android:id="@+id/BalanceTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/WalletAccountTv"
+            android:text="@string/AccountBalanceTitle"
+            android:textSize="12sp"
+            android:textColor="@color/walletFifthColor"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="2sp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/TokenNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/BalanceTitleTv"
+            android:text="@string/TokenName"
+            android:textColor="@color/walletFifthColor"
+            android:layout_marginEnd="15sp"
+            android:layout_alignBaseline="@id/AccountBalanceTv"/>
+
+        <TextView
+            android:id="@+id/AccountBalanceTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:layout_toStartOf="@id/TokenNameTv"
+            android:layout_below="@id/BalanceTitleTv"
+            android:layout_marginEnd="6sp"/>
+
+        <TextView
+            android:id="@+id/EthBalanceTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/AccountBalanceTv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:text="@string/EthBalanceTitle"
+            android:textColor="@color/walletFifthColor"
+            android:textSize="12sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="2sp"/>
+
+        <TextView
+            android:id="@+id/EthNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/EthName"
+            android:textColor="@color/walletFifthColor"
+            android:layout_below="@id/EthBalanceTitleTv"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBaseline="@id/EthBalanceTv"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="5sp"/>
+
+        <TextView
+            android:id="@+id/EthBalanceTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:layout_below="@id/EthBalanceTitleTv"
+            android:layout_toStartOf="@id/EthNameTv"
+            android:layout_marginEnd="6sp"
+            android:layout_marginBottom="5sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_marginTop="2sp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/BuyTokenBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableTop="@drawable/ic_buy_token"
+            android:padding="10sp"
+            android:drawablePadding="8sp"
+            android:text="@string/BuyToken"
+            android:textColor="@color/walletSixthColor"
+            android:layout_weight="1"
+            android:onClick="walletMainOnclick"/>
+
+        <View
+            android:layout_width="0.5sp"
+            android:layout_height="64sp"
+            android:background="@color/walletSixthColor"/>
+
+        <Button
+            android:id="@+id/SendTokenBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableTop="@drawable/ic_send_token"
+            android:padding="10sp"
+            android:drawablePadding="8sp"
+            android:text="@string/SendToken"
+            android:textColor="@color/walletSixthColor"
+            android:layout_weight="1"
+            android:onClick="walletMainOnclick"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/txTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        android:minHeight="?actionBarSize"
+        app:tabIndicatorColor="@color/walletThirdColor"
+        app:tabIndicatorHeight="2dp"
+        app:tabBackground="@color/walletSecondColor"
+        app:tabMode="fixed"
+        app:tabTextColor="@color/walletFourthColor"
+        app:tabSelectedTextColor="@color/walletThirdColor"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp">
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/txViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp">
+    </android.support.v4.view.ViewPager>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/TransactionHistory"
+        android:padding="10dp"
+        android:textColor="@color/walletThirdColor"
+        android:textStyle="bold"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/TransactionList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

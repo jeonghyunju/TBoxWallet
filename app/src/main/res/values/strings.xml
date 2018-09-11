@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">TBoxWallet</string>
+    <string name="WalletTitle">My Wallet</string>
+    <string name="WalletAccountTitle">Your Account</string>
+    <string name="AccountBalanceTitle">Your Balance</string>
+    <string name="TokenName">TBC</string>
+    <string name="EthBalanceTitle">ETH Balance</string>
+    <string name="EthName">ETH</string>
+    <string name="TransactionHistory">Transaction History</string>
+    <string name="BuyToken">BUY</string>
+    <string name="SendToken">SEND</string>
+    <string name="BuyTokenTitle">토큰 구매</string>
+    <string name="BuyTokenIcon">$</string>
+    <string name="BuyTokenScript">TBOX 토큰을 구매할 수 있습니다.</string>
+    <string name="BuyTokenAmount">구매 수량</string>
+    <string name="BuyTokenAmountScript">0</string>
+    <string name="BuyTokenDone">DONE</string>
+    <string name="SendTokenTitle">토큰 보내기</string>
+    <string name="SendTokenIcon">T</string>
+    <string name="SendTokenScript">다른 사용자에게 토큰을 보낼 수 있습니다.</string>
+    <string name="SendTokenFrom">From</string>
+    <string name="SendTokenFromScript">보내는 사람</string>
+    <string name="SendTokenTo">To</string>
+    <string name="SendTokenToScript">받는 사람</string>
+    <string name="SendTokenAmountScript">0</string>
+    <string name="SendTokenAmount">보낼 수량</string>
+    <string name="NoTxAllList">리스트가 없습니다.</string>
+    <string name="TxDetailTitle">상세 보기</string>
+    <string name="TxBlockNumTitle">블록 번호</string>
+    <string name="TxContractAddressTitle">계약 주소</string>
+    <string name="TxGasTitle">GAS</string>
+    <string name="TxGasPriceTitle">GAS Price</string>
+    <string name="CameraPermissionScript">카메라 접근 권한이 필요합니다</string>
+    <string name="PermissionOK">OK</string>
+    <string name="alert">알림</string>
+</resources>

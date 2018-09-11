@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyToken"
+    android:orientation="vertical"
+    android:background="@color/walletFirstColor">
+
+    <ImageButton
+        android:id="@+id/closeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        app:srcCompat="@drawable/ic_close_black_24dp"
+        android:background="@null"
+        android:padding="15sp"
+        android:onClick="buyTokenOnclick"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:layout_marginTop="24sp"
+        android:layout_marginStart="32sp">
+
+        <ImageView
+            android:layout_width="64sp"
+            android:layout_height="64sp"
+            android:background="@drawable/buy_token_circle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BuyTokenIcon"
+            android:textColor="@color/walletFirstColor"
+            android:textSize="48sp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BuyTokenTitle"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:layout_marginStart="32sp"
+        android:layout_marginTop="24sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BuyTokenScript"
+        android:textColor="@color/walletSeventhColor"
+        android:textSize="16sp"
+        android:layout_marginStart="32sp"
+        android:layout_marginTop="10sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120sp"
+        android:layout_marginStart="32sp"
+        android:layout_marginBottom="5sp">
+
+        <TextView
+            android:id="@+id/amountTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BuyTokenAmount"
+            android:textColor="@color/walletEightColor"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <ImageButton
+            android:id="@+id/AmountMinusBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_minus_token"
+            android:layout_toEndOf="@id/amountTv"
+            android:padding="5sp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40sp"
+            android:onClick="buyTokenOnclick"/>
+
+        <EditText
+            android:id="@+id/amountEt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:layout_toEndOf="@id/AmountMinusBtn"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:hint="@string/BuyTokenAmountScript"
+            android:textColorHint="@color/walletNineColor"
+            android:inputType="number"
+            android:textAlignment="center"/>
+
+        <ImageButton
+            android:id="@+id/AmountPlusBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/amountEt"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="5sp"
+            app:srcCompat="@drawable/ic_plus_token"
+            android:onClick="buyTokenOnclick"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8sp"
+        android:layout_marginStart="32sp"
+        android:layout_marginTop="5sp"
+        android:background="@color/walletEightColor"/>
+
+    <Button
+        android:id="@+id/BuyTokenDoneBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="@string/BuyTokenDone"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="128sp"
+        android:onClick="buyTokenOnclick"/>
+</LinearLayout>

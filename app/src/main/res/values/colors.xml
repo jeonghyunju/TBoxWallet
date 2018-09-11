@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="walletFirstColor">#FEB729</color>
+    <color name="walletSecondColor">#00275E</color>
+    <color name="walletThirdColor">#6D98AB</color>
+    <color name="walletFourthColor">#266D98AB</color>
+    <color name="walletFifthColor">#66ffffff</color>
+    <color name="walletSixthColor">#FDFDEB</color>
+    <color name="walletSeventhColor">#a6ffffff</color>
+    <color name="walletEightColor">#FE8402</color>
+    <color name="walletNineColor">#66FE8402</color>
+    <color name="walletTencolor">#FF5A09</color>
+    <color name="walletEvelenColor">#66FF5A09</color>
+    <color name="DialogColor">#662d2d2d</color>
+    <color name="nullColor">@null</color>
+    <color name="walletTwellveColor">#ca0000</color>
+    <color name="walletThirteenColor">#3e6a45</color>
+</resources>

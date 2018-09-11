@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8sp"
+    android:layout_marginBottom="5sp">
+
+    <ImageView
+        android:id="@+id/txIcon"
+        android:layout_width="56sp"
+        android:layout_height="56sp"
+        android:layout_marginStart="8sp"/>
+
+    <TextView
+        android:id="@+id/txTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/txIcon"
+        android:layout_marginStart="24sp"
+        android:text="Send TBC Token"
+        android:textSize="16sp"
+        android:textColor="@color/walletSixthColor"
+        android:layout_marginTop="5sp"/>
+
+    <TextView
+        android:id="@+id/txTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txTitle"
+        android:layout_toEndOf="@id/txIcon"
+        android:layout_marginStart="24sp"
+        android:layout_marginTop="8sp"
+        android:textColor="@color/walletFifthColor"/>
+
+    <TextView
+        android:id="@+id/txAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp"
+        android:text="+ 30"
+        android:layout_marginTop="5sp"
+        android:layout_marginEnd="8sp"/>
+
+    <TextView
+        android:id="@+id/txToken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txAmount"
+        android:layout_alignParentEnd="true"
+        android:text="@string/TokenName"
+        android:textColor="@color/walletFifthColor"
+        android:layout_marginTop="8sp"
+        android:layout_marginEnd="8sp"/>
+</RelativeLayout>

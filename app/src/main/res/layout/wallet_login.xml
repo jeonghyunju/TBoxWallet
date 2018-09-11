@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WalletLogin"
+    android:background="@color/walletSecondColor"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_wallet_fore"
+        android:layout_marginTop="128dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WALLET"
+        android:textColor="@color/walletFirstColor"
+        android:textSize="32dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/loginID_et"
+        android:layout_width="264dp"
+        android:layout_height="40dp"
+        android:ems="13"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/account_round_circle"
+        android:padding="7dp"
+        android:hint="아이디를 입력하세요"
+        android:textColorHint="@color/walletThirdColor"
+        android:textAlignment="center"
+        android:textSize="14dp"
+        android:textColor="@color/walletFirstColor"/>
+
+    <Button
+        android:id="@+id/LoginBtn"
+        android:layout_width="264dp"
+        android:layout_height="40dp"
+        android:background="@drawable/create_account_done_circle"
+        android:layout_marginTop="24dp"
+        android:text="LOGIN"
+        android:textColor="@color/walletSecondColor"
+        android:onClick="goLogin"/>
+</LinearLayout>

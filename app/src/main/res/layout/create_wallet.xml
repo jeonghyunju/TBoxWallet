@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateWallet"
+    android:orientation="vertical"
+    android:background="@color/walletSecondColor">
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        app:srcCompat="@drawable/ic_wallet_fore"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/walletFirstColor"
+        android:textSize="32dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_user"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+            android:id="@+id/WalletID_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="13"
+            android:background="@drawable/account_round_circle"
+            android:padding="7dp"
+            android:hint="아이디"
+            android:textColorHint="@color/walletThirdColor"
+            android:textSize="14dp"
+            android:textColor="@color/walletThirdColor"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_locked"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+            android:id="@+id/WalletPW_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="13"
+            android:background="@drawable/account_round_circle"
+            android:padding="7dp"
+            android:hint="비밀번호"
+            android:textColorHint="@color/walletThirdColor"
+            android:textSize="14dp"
+            android:textColor="@color/walletThirdColor"
+            android:inputType="textPassword"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/createDoneBtn"
+        android:layout_width="256dp"
+        android:layout_height="40dp"
+        android:background="@drawable/create_account_done_circle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="48dp"
+        android:text="계정 생성하기"
+        android:textColor="@color/walletSecondColor"
+        android:onClick="createAccount"/>
+</LinearLayout>
